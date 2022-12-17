@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMPS ~ Home</title>
+
+    <!-- ICONSCOUT CDN LINK -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- GOOGLE FONTS (MONTESERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html">
+                <h4>CMPS</h4>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="index.html" class="hover-underline-animation">Home</a></li>
+                <li><a href="about.html" class="hover-underline-animation">About</a></li>
+                <li><a href="courses.html" class="hover-underline-animation">Courses</a></li>
+                <li><a href="contact.html" class="hover-underline-animation">Contact</a></li>
+            </ul>
+            <button id="open-menu-button"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-button"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!--========== END OF NAVBAR ==========-->
+
+
+
+
+
+    <!--========== HEADER ==========-->
+
+    <header>
+
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Corolla Model Private School</h1>
+                <p>
+                <h4>Virtue & Excellence</h4>Corolla Model Private School is a Christian school that offers all-round
+                education. We believe in learning through fun; giving
+                individual attention to children.</p>
+                <a href="wa.me/+2349049210988" class="btn btn-primary">Get in touch</a>
+            
+            </div>
+            <div class="header_right">
+                <img src="./images/header.png" class="header_right_image" alt="">
+            </div>
+        </div>
+       
+    </header>
+
+
+    <!--========== BUBBLES ==========-->
+    <section class="bubble_container">
+
+    </section>
+    <script type="text/javascript">
+
+        function createBubble() {
+            const section = document.querySelector('.bubble_container');
+            const createElement = document.createElement('span');
+
+            var size = Math.random() * 60;
+
+            createElement.style.width = 100 + size + 'px';
+            createElement.style.height = 100 + size + 'px';
+            createElement.style.backgroundColor = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`;
+
+            createElement.style.left = Math.random() * innerWidth + 'px';
+            section.appendChild(createElement);
+
+            setTimeout(() => {
+                createElement.remove()
+            }, 15000);
+        }
+        setInterval(createBubble, 2000);
+
+    </script>
+
+
+
+
+    <!--========== CATEGORIES ==========-->
+
+    <div class="categories categories_container">
+        <div class="categories_left">
+            <h1>Categories</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta accusamus totam quaerat unde
+                id quas natus saepe sapiente repellendus officiis repudiandae, laboriosam numquam alias? Culpa veritatis
+                exercitationem perferendis quibusdam.
+            </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="categories_right">
+            <article class="category"></article>
+            <article class="category"></article>
+            <article class="category"></article>
+            <article class="category"></article>
+            <article class="category"></article>
+            <article class="category"></article>
+        </div>
+    </div>
+
+    <!--========== END OF CATEGORIES ==========-->
+
+</body>
+
+</html>
